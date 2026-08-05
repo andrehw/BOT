@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}    
+<div class="section-sitio">
+<h2>Contenido del sitio</h2>
+<h2>Contenido del sitio</h2>
+<h2>Contenido del sitio</h2>
+<h2>Contenido del sitio</h2>
+<h2>Contenido del sitio</h2>
+<h2>Contenido del sitio</h2>
+</div>
+
+
+
+<svg class="timeline-svg" width="500" height="600" viewBox="0 0 100 600">
+  <!-- Línea central del tiempo -->
+  <line class="timeline-linea" x1="50" y1="100" x2="300" y2="300" />
+  <line class="timeline-linea linea2" x1="300" y1="300" x2="50" y2="500" />
+  <!-- Hitos / Puntos de la línea de tiempo -->
+  <circle class="timeline-nodo nodo-1" cx="50" cy="100" r="10" />
+  <circle class="timeline-nodo nodo-2" cx="300" cy="300" r="10" />
+  <circle class="timeline-nodo nodo-3" cx="50" cy="500" r="10" />
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% csrf_token %}
+<section class="section-chat">
+<div id="chat-header" class="hijo">
+
+    <img src="{% static '\img\output-onlinegiftools.gif' %}" class="icono-bot" >
+    <p> Chat de Insitra </p>
+</div>
+<div id="chat-container" class="hijo">
+    <div id="chat-window">
+        <!-- Aquí aparecerán los mensajes -->
+        <div class="bot-msg">
+            
+            ¡Hola! Soy el asistente de Insitra. ¿En qué puedo ayudarte?
+        </div>
+    </div>
+    <div id="chat-input-area">
+        <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+        <button id="send-btn">Enviar</button>
+    </div>
+</div>
+</section>
+
+{% endblock %}

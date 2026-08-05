@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+<head><link rel="stylesheet" href="{% static 'css/chat.css' %}">
+<!-- Enlace normal a la librería completa -->
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zen+Dots&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div>
+        <h1>Template Base Barra de navegacion</h1>
+    </div>
+
+{% block content %}    
+
+{% endblock %}
+
+
+<script src="{% static 'js/chat.js' %}">
+</script>
+</body>
+</html>    
