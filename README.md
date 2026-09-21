@@ -65,3 +65,5 @@ Para iniciar el chatbot, ejecuta el siguiente comando:
    * Ejecuta el comando:
    Python manage.py runserver
 
+<img width="6578" height="4668" alt="diagram" src="https://github.com/user-attachments/assets/cbb53a36-08e0-4fb7-93ca-ea327ab2ebae" />
+
